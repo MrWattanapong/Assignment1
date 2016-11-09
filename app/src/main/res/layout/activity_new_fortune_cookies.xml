@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/cookiesbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/title_main"
+                android:textSize="20dp"
+                android:text="Fortune Cookies"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Cookies"
+        android:id="@+id/textView"
+        android:layout_below="@+id/cookiesbar"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        android:textColor="#0040ff"
+        android:padding="5dp"
+        android:autoText="false" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:id="@+id/cookiesImg"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/closed_cookie" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/cookiesImg"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:textSize="30dp"
+        android:padding="5dp"
+        android:background="#D4E9FF"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result : No Result"
+        android:id="@+id/resultText"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:textColor="#0040ff"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:layout_marginLeft="40dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date :                 "
+        android:id="@+id/dateText"
+        android:layout_below="@+id/resultText"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"
+        android:gravity="end"
+        android:textColor="#000000"
+        android:padding="5dp"
+        android:background="#cbcbcb" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shake"
+        android:id="@+id/shakeBtn"
+        android:background = "@drawable/round"
+        android:layout_below="@+id/dateText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp" />
+
+</RelativeLayout>
